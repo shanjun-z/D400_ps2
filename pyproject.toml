@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygbm"
+version = "0.1.0"
+description = "Geometric Brownian motion simulator"
+requires-python = ">=3.8"
+dependencies = ["numpy", "matplotlib"]
+
+[project.scripts]
+pygbm = "pygbm.cli:main"
+
+[tool.setuptools]
+packages = ["pygbm"]
